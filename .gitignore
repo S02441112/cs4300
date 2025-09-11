@@ -1,0 +1,24 @@
+# Python bytecode files
+__pycache__
+.py[cod]
+
+# Virtual environment directories
+venv
+env
+.venv
+ENV
+.ENV
+
+# pytest cache
+.pytest_cache
+
+# PyCharm specific files
+.idea
+
+# IDE or editor specific files (other editors)
+.vscode
+.swp
+
+# System-specific files
+.DS_Store
+Thumbs.db
