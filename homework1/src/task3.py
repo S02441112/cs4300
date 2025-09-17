@@ -1,3 +1,4 @@
+import math
 def task_3_sign(x):
     if x < 0:
         return "Negative"
@@ -6,16 +7,15 @@ def task_3_sign(x):
     else:
         return "Positive"
 
-# test does not match logic
 def task_3_primes():
     primes = []
-    num = 2
+    num = 2 # first prime number
     while len(primes) < 10:
-        for i in range(2, int(num ** 0.5) + 1):
+        for i in range(2, int(math.sqrt(num)) + 1): # num ** 0.5 is equivalent to sqrt(num)
             if num % i == 0:
                 break
-            else:
-                primes.append(num)
+        else:
+            primes.append(num)
         num += 1
     return primes
 

@@ -2,5 +2,5 @@
 
 from homework1.src.task1 import task_1
 
-def test_task_1_output(capsys):
+def test_output():
     assert task_1() == "Hello, World!"
