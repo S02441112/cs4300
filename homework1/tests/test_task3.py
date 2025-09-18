@@ -1,9 +1,15 @@
+import pytest
 from homework1.src.task3 import *
 
 def test_sign():
     assert task_3_sign(1) == "Positive"
     assert task_3_sign(-1) == "Negative"
     assert task_3_sign(0) == "Zero"
+
+def test_invalid_input_type():
+    # Strings aren’t valid for math comparisons
+    with pytest.raises(TypeError):
+        task_3_sign("hello")
 
 def test_primes():
     expected = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
