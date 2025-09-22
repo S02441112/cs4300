@@ -1,4 +1,4 @@
-from homework1.src.task6 import words_in_file
+from src.task6 import words_in_file
 import pytest
 
 @pytest.mark.parametrize(

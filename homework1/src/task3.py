@@ -1,6 +1,6 @@
 import math
 def task_3_sign(x):
-    """Return the sign of x."""
+    """Return sign of x."""
     if x < 0:
         return "Negative"
     elif x == 0:
@@ -9,7 +9,7 @@ def task_3_sign(x):
         return "Positive"
 
 def task_3_primes():
-    """Return the first 10 prime numbers using a for loop."""
+    """Return first 10 prime numbers using for loop."""
     primes = []
     num = 2 # first prime number
     while len(primes) < 10:
@@ -24,7 +24,7 @@ def task_3_primes():
     return primes
 
 def task_3_sum_numbers():
-    """Return the sum of all numbers 1 to 100."""
+    """Return sum of all numbers 1 to 100."""
     i = 0
     total = 0
     while i <= 100:

@@ -2,8 +2,7 @@
 
 def task_1():
     """
-    Task 1:
-    Prints and returns 'Hello, World!' to demonstrate Python basics.
+    Prints and returns 'Hello, World!'.
     """
     hi_there = "Hello, World!"
     print(hi_there)

@@ -1,5 +1,5 @@
 import pytest
-from homework1.src.task2 import *
+from src.task2 import *
 
 @pytest.mark.parametrize(
     "func, expected",
