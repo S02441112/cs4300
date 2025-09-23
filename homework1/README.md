@@ -4,7 +4,7 @@ This project contains solutions for **Homework 1** in CS4300.
 It demonstrates Python basics, control structures, file handling, duck typing, and package usage, with all functionality verified using **pytest**.
 
 ---
-
+'''
 Project Structure
 
 cs4300/
@@ -29,7 +29,7 @@ cs4300/
 ├── README.md # This file
 └── homework2/
 
-
+'''
 # Create and activate a virtual environment
 
 python3 -m venv hw1_venv
