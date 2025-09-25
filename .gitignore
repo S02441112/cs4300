@@ -1,13 +1,24 @@
-# Python bytecode files
-__pycache__
-.py[cod]
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
 
-# Virtual environment directories
-venv
-env
-.venv
-ENV
-.ENV
+# Virtual environments
+venv/
+env/
+*.env
+*.venv
+hw1_venv/
+hw2_venv/
+
+# Django stuff
+*.log
+*.pot
+*.pyc
+db.sqlite3
+media/
+staticfiles/
 
 # pytest cache
 .pytest_cache
@@ -16,7 +27,7 @@ ENV
 .idea
 
 # IDE or editor specific files (other editors)
-.vscode
+.vscode/
 .swp
 
 # System-specific files
