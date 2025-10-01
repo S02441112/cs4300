@@ -16,8 +16,20 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from bookings.views import *
+
+router = DefaultRouter()
+router.register(r'movies', MovieViewSet)
+router.register(r'seats', SeatViewSet)
+router.register(r'bookings', BookingViewSet)
 
 urlpatterns = [
+    path('api/', include(router.urls)),
+    
     path('admin/', admin.site.urls),
-    path('', include('bookings.urls'))
+
+    path('', movie_list, name='movie_list'),
+    path('movies/<int:movie_id>/seats/', seat_booking, name='seat_booking'),
+    path('bookings/history/', booking_history, name='booking_history'),
 ]

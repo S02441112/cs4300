@@ -20,10 +20,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-1v@o$!9xy-#6ks*#9r*f#5vu7@lmg3irfi_ui4b0l+o=xe26kk'
+SECRET_KEY = 'django-insecure-4-xg1uz@#+vtf7i64u439vpv!6s-1+kc$_zelekp(+@28o6fqx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
+USE_X_FORWARDED_HOST = True
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 ALLOWED_HOSTS = []
 
@@ -37,11 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    # third-party apis
     'rest_framework',
-
-    # project apps
     'bookings',
 ]
 
