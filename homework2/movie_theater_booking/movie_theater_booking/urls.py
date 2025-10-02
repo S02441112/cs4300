@@ -31,5 +31,8 @@ urlpatterns = [
 
     path('', movie_list, name='movie_list'),
     path('movies/<int:movie_id>/seats/', seat_booking, name='seat_booking'),
+    path('movies/<int:pk>/delete/', MovieDeleteView.as_view(), name='movie-delete'),
     path('bookings/history/', booking_history, name='booking_history'),
+    path('add/', MovieCreateView.as_view(), name='movie_add'),
+    
 ]

@@ -4,6 +4,22 @@ from rest_framework.decorators import action
 from rest_framework.response import Response
 from .models import Movie, Seat, Booking
 from .serializers import MovieSerializer, SeatSerializer, BookingSerializer
+from django.views.generic.edit import CreateView
+from django.urls import reverse_lazy
+from django.views.generic.edit import DeleteView
+
+
+
+class MovieCreateView(CreateView):
+    model = Movie
+    fields = ['title', 'description', 'release_date', 'duration']  
+    template_name = 'movie_form.html'
+    success_url = reverse_lazy('movie_list')  # redirect after saving
+
+class MovieDeleteView(DeleteView):
+    model = Movie
+    template_name = 'movie_confirm_delete.html'
+    success_url = reverse_lazy('movie_list')
 
 # Movie CRUD
 class MovieViewSet(viewsets.ModelViewSet):

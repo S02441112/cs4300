@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-5">
+  <h2>Add a New Movie</h2>
+  <form method="post">
+    {% csrf_token %}
+    
+    <!-- Title -->
+    <div class="mb-3">
+      <label for="id_title" class="form-label">Title</label>
+      {{ form.title }}
+    </div>
+
+    <!-- Description -->
+    <div class="mb-3">
+      <label for="id_description" class="form-label">Description</label>
+      {{ form.description }}
+    </div>
+
+    <!-- Release Date with date picker -->
+    <div class="mb-3">
+      <label for="id_release_date" class="form-label">Release Date</label>
+      <input 
+        type="date" 
+        name="release_date" 
+        id="id_release_date" 
+        class="form-control"
+        placeholder="YYYY-MM-DD"
+        required>
+    </div>
+
+    <!-- Duration -->
+    <div class="mb-3">
+      <label for="id_duration" class="form-label">Duration (minutes)</label>
+      {{ form.duration }}
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Movie</button>
+  </form>
+</div>
+{% endblock %}
