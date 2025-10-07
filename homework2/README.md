@@ -1,3 +1,15 @@
+# Project Structure 
+```
+homework2/
+└── movie_theater_booking/
+    ├── bookings/
+    │   ├── migrations/
+    │   ├── templates/
+    ├── movie_theater_booking/
+    ├── static/
+    ├── build.sh
+    └── db.sqlite3
+```
 # Self Hosted on Docker (Installation)
 Project Self Hosted on Docker - not DevEdu
 https://github.com/DevEdu-IO/docker-django/blob/master/README.md
@@ -58,3 +70,4 @@ booking list:   https://cs4300movie-app.onrender.com/bookings/history/
 Many aspects of the html files were provided via chat ChatGPT (GPT-5)
 Troubleshooting deployment to render was heavily guided by GPT-5
 Test cases inspired by GPT-5
+Project structure tree created by GPT-5
