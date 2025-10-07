@@ -38,22 +38,21 @@ python3 manage.py test -v 2
 ```
 ## Running the Django Application on the Web (Render Hosted)
 ```
-    https://cs4300movie-app.onrender.com/
+https://cs4300movie-app.onrender.com/
 ```
 Able to perform CRUD operations on the api
 ```
-    movies:     https://cs4300movie-app.onrender.com/api/movies/
-    seats:      https://cs4300movie-app.onrender.com/api/seats/
-    bookings:   https://cs4300movie-app.onrender.com/api/bookings/
+movies:     https://cs4300movie-app.onrender.com/api/movies/
+seats:      https://cs4300movie-app.onrender.com/api/seats/
+bookings:   https://cs4300movie-app.onrender.com/api/bookings/
 ```
 Display data performed from CRUD operations by api on regular site (also added CRUD operations on regular site for implementation prctice)
-Able to perform CRUD operations on the api
 ```
-    movie list:     https://cs4300movie-app.onrender.com/
-    movie seats:    https://cs4300movie-app.onrender.com/movies/<movie_id>/seats/
-    delete movie:   https://cs4300movie-app.onrender.com/movies/<movie_id>/delete/
-    add movie:      https://cs4300movie-app.onrender.com/add/
-    booking list:   https://cs4300movie-app.onrender.com/bookings/history/
+movie list:     https://cs4300movie-app.onrender.com/
+movie seats:    https://cs4300movie-app.onrender.com/movies/<movie_id>/seats/
+delete movie:   https://cs4300movie-app.onrender.com/movies/<movie_id>/delete/
+add movie:      https://cs4300movie-app.onrender.com/add/
+booking list:   https://cs4300movie-app.onrender.com/bookings/history/
 ```
 # AI Usage
 Many aspects of the html files were provided via chat ChatGPT (GPT-5)
